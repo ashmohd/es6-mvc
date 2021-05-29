@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesto App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>PESTO APP</h1>
+</header>
+ <div class="container">
+    <div class="row">
+        <div class="column">
+            <form action="#mentor-form" id="mentor-form">
+              <div class="row">
+                <div class="col-25">
+                  <label for="mentor-name">Name:</label>
+                </div>
+                <div class="col-75">
+                  <input required type="text" id="mentor-name" name="mentor-name" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="mentor-age">Age:</label>
+                </div>
+                <div class="col-75">
+                  <input required type="number" id="mentor-age" name="mentor-age" placeholder="Your Age..">
+                </div>
+              </div>
+
+              <div class="row">
+                <input type="submit" value="Add Mentor">
+              </div>
+            </form>
+        </div>
+        <div class="column">
+            <form action="#mentee-form" id="mentee-form">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="mentee-name">Name:</label>
+                  </div>
+                  <div class="col-75">
+                    <input required type="text" id="mentee-name" name="mentee-name" placeholder="Your name..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="age">Age:</label>
+                  </div>
+                  <div class="col-75">
+                    <input required type="number" id="mentee-age" name="mentee-age" placeholder="Your Age..">
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="age">Mentees:</label>
+                    </div>
+                    <div class="col-75">
+                      <select name="mentor" id="mentor-info" required>
+                          <option value="">Select </option>
+                      </select>
+                    </div>
+                 </div>
+                <div class="row">
+                  <input type="submit" value="Add Mentor">
+                </div>
+              </form>
+
+        </div>
+        <div class="column">
+             <h3>Mentors</h3>
+              <table id="mentor-list">
+                <tr><th>Name</th></tr>
+              </table>
+        </div>
+        <div class="column">
+          <h3>Mentees</h3>
+          <table id="mentee-list">
+            <tr><th>Name</th></tr>
+          </table>
+        </div>
+      </div>
+ </div>   
+ <footer>
+  <script src="index.js" type="module"></script>
+ </footer>
+</body>
+</html>
